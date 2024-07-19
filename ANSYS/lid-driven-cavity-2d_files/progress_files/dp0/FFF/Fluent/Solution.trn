@@ -1,0 +1,1778 @@
+
+Build Time: Nov 20 2020 15:49:41 EST 
+Executable Path: C:/PROGRA~1/ANSYSI~1/v211/fluent/ntbin/win64/fluent.exe
+
+-------------------------------------------------------------------------------
+ID    Hostname  Core  O.S.         PID    Vendor                          
+-------------------------------------------------------------------------------
+n3    ME        4/12  Windows-x64  16116  Intel(R) Core(TM) i7-9750H      
+n2    ME        3/12  Windows-x64  8436   Intel(R) Core(TM) i7-9750H      
+n1    ME        2/12  Windows-x64  18764  Intel(R) Core(TM) i7-9750H      
+n0*   ME        1/12  Windows-x64  23904  Intel(R) Core(TM) i7-9750H      
+host  ME              Windows-x64  17716  Intel(R) Core(TM) i7-9750H      
+
+MPI Option Selected: intel
+Selected system interconnect: default
+-------------------------------------------------------------------------------
+Fast-loading "C:\PROGRA~1\ANSYSI~1\v211\fluent\fluent21.1.0\\addons\afd\lib\hdfio.bin"
+Done.
+
+Reading from ME:"C:\Users\MonsteR\Desktop\special topics\final project\lid-driven-cavity-2d\lid-driven-cavity-2d_files\dp0\FFF\Fluent\FFF-Setup-Output.cas.h5" in NODE0 mode ...
+  Reading mesh ...
+       12000 cells,     1 cell zone  ...
+          12000 quadrilateral cells,  zone id: 2
+       24220 faces,     3 face zones ...
+          23780 2D interior faces,  zone id: 1
+            340 2D wall faces,  zone id: 5
+            100 2D wall faces,  zone id: 6
+       12221 nodes,     1 node zone  ...
+  Done.
+
+
+
+Building...
+     mesh
+	distributing mesh
+		parts....,
+		faces....,
+		nodes....,
+		cells....,
+        bandwidth reduction using Reverse Cuthill-McKee: 74/51 = 1.45098
+     materials,
+     interface,
+     domains,
+	mixture
+     zones,
+	driven
+	fixed
+	interior-surface_body
+	surface_bodySetting surface_body (mixture) ... Done.
+ Setting zone id of surface_body to 2.
+ Setting zone id of interior-surface_body to 1.
+ Setting zone id of fixed to 5.
+ Setting zone id of driven to 6.
+Done.
+Setting surface_body (mixture) ... Done.
+Setting interior-surface_body (mixture) ... Done.
+Setting fixed (mixture) ... Done.
+Setting driven (mixture) ... Done.
+
+     parallel,
+Done.
+
+Preparing mesh for display...
+Done.
+WB->Fluent:Parameter name:speed, value:1
+WB->Fluent:Parameter name:viscosity, value:0.0001
+"Updating Setup cell..."
+WB->Fluent:Parameter name:speed, value:1
+WB->Fluent:Parameter name:viscosity, value:0.0001
+"Updating Solution cell..."
+
+Reading from ME:"C:\Users\MonsteR\Desktop\special topics\final project\lid-driven-cavity-2d\lid-driven-cavity-2d_files\dp0\FFF\Fluent\FFF-4-00149.dat.h5" in NODE0 mode ...
+
+
+  Reading results.
+Parallel variables...
+Done.
+WB->Fluent:Parameter name:speed, value:1
+WB->Fluent:Parameter name:viscosity, value:0.0001
+
+Writing to ME:"C:\Users\MonsteR\Desktop\special topics\final project\lid-driven-cavity-2d\lid-driven-cavity-2d_files\dp0\FFF\Fluent\FFF-5.cas.h5" in NODE0 mode and compression level 1 ...
+  Writing mesh ...
+       12000 cells,     1 zone  ...
+       24220 faces,     3 zones ...
+       12221 nodes,     1 zone  ...
+  Done.
+Done.
+
+Writing to ME:"C:\Users\MonsteR\Desktop\special topics\final project\lid-driven-cavity-2d\lid-driven-cavity-2d_files\dp0\FFF\Fluent\FFF-5-00000.dat.h5" in NODE0 mode and compression level 1 ...
+  Writing results.
+Done.
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+   100  1.8229e-03  5.8302e-06  6.8007e-06  1.0991e-04  7.4524e-04  0:00:19  900
+!  200 solution is converged
+   200  7.9859e-05  2.9995e-07  3.4583e-07  3.0919e-06  2.1202e-05  0:00:01  800
+Flow time = 1s, time step = 1
+148 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+!  200 solution is converged
+   200  7.9859e-05  2.9995e-07  3.4583e-07  3.0919e-06  2.1202e-05  0:00:01 1000
+   300  9.5208e-04  4.1342e-06  4.5375e-06  5.3245e-05  3.7213e-04  0:00:24  900
+!  400 solution is converged
+   400  5.1334e-05  2.2581e-07  2.3323e-07  2.0588e-06  1.3509e-05  0:00:01  800
+Flow time = 2s, time step = 2
+147 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+!  400 solution is converged
+   400  5.1334e-05  2.2581e-07  2.3323e-07  2.0588e-06  1.3509e-05  0:00:02 1000
+   500  5.7229e-04  2.9984e-06  3.0912e-06  3.1281e-05  2.2831e-04  0:00:02  900
+!  600 solution is converged
+   600  3.0288e-05  1.6024e-07  1.4564e-07  1.2328e-06  8.0424e-06  0:01:43  800
+Flow time = 3s, time step = 3
+146 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+!  600 solution is converged
+   600  3.0288e-05  1.6024e-07  1.4564e-07  1.2328e-06  8.0424e-06  0:02:08 1000
+   700  3.7006e-04  2.2458e-06  2.2446e-06  1.9459e-05  1.4481e-04  0:00:03  900
+!  800 solution is converged
+   800  1.7720e-05  1.2267e-07  1.0968e-07  7.7288e-07  5.2100e-06  0:00:27  800
+Flow time = 4s, time step = 4
+145 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+!  800 solution is converged
+   800  1.7720e-05  1.2267e-07  1.0968e-07  7.7288e-07  5.2100e-06  0:00:34 1000
+   900  2.5162e-04  1.7875e-06  1.7890e-06  1.2906e-05  9.6538e-05  0:00:01  900
+! 1000 solution is converged
+  1000  1.2369e-05  1.0738e-07  1.0073e-07  5.5629e-07  4.0050e-06  0:00:06  800
+Flow time = 5s, time step = 5
+144 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 1000 solution is converged
+  1000  1.2369e-05  1.0738e-07  1.0073e-07  5.5629e-07  4.0050e-06  0:00:07 1000
+  1100  1.8721e-04  1.5204e-06  1.5388e-06  9.2412e-06  6.9338e-05  0:00:08  900
+! 1200 solution is converged
+  1200  1.0569e-05  9.7191e-08  9.4734e-08  4.4088e-07  3.3116e-06  0:00:00  800
+Flow time = 6s, time step = 6
+143 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 1200 solution is converged
+  1200  1.0569e-05  9.7191e-08  9.4734e-08  4.4088e-07  3.3116e-06  0:00:00 1000
+  1300  1.4757e-04  1.3589e-06  1.3891e-06  7.0923e-06  5.3391e-05  0:00:01  900
+! 1400 solution is converged
+  1400  1.0373e-05  8.8263e-08  8.7255e-08  3.6437e-07  2.7944e-06  0:00:03  800
+Flow time = 7s, time step = 7
+142 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 1400 solution is converged
+  1400  1.0373e-05  8.8263e-08  8.7255e-08  3.6437e-07  2.7944e-06  0:00:04 1000
+  1500  1.3736e-04  1.2418e-06  1.2730e-06  5.7488e-06  4.3303e-05  0:00:59  900
+! 1600 solution is converged
+  1600  9.5429e-06  7.8810e-08  7.8369e-08  3.0755e-07  2.3775e-06  0:00:03  800
+Flow time = 8s, time step = 8
+141 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 1600 solution is converged
+  1600  9.5429e-06  7.8810e-08  7.8369e-08  3.0755e-07  2.3775e-06  0:00:04 1000
+  1700  1.2587e-04  1.1400e-06  1.1648e-06  4.8418e-06  3.6368e-05  0:00:05  900
+! 1800 solution is converged
+  1800  8.4458e-06  6.9591e-08  6.9370e-08  2.6244e-07  2.0315e-06  0:01:22  800
+Flow time = 9s, time step = 9
+140 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 1800 solution is converged
+  1800  8.4458e-06  6.9591e-08  6.9370e-08  2.6244e-07  2.0315e-06  0:01:43 1000
+  1900  1.1519e-04  1.0448e-06  1.0624e-06  4.1796e-06  3.1217e-05  0:00:02  900
+! 2000 solution is converged
+  2000  7.3004e-06  6.1057e-08  6.0925e-08  2.2548e-07  1.7424e-06  0:00:52  800
+Flow time = 10s, time step = 10
+139 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 2000 solution is converged
+  2000  7.3004e-06  6.1057e-08  6.0925e-08  2.2548e-07  1.7424e-06  0:01:06 1000
+  2100  1.0644e-04  9.5424e-07  9.6637e-07  3.6636e-06  2.7171e-05  0:00:02  900
+! 2200 solution is converged
+  2200  6.3316e-06  5.3414e-08  5.3312e-08  1.9489e-07  1.5021e-06  0:02:08  800
+Flow time = 11s, time step = 11
+138 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 2200 solution is converged
+  2200  6.3316e-06  5.3414e-08  5.3312e-08  1.9489e-07  1.5021e-06  0:02:40 1000
+! 2300 solution is converged
+  2300  9.6652e-05  8.6878e-07  8.7737e-07  3.2434e-06  2.3884e-05  0:00:01  900
+Flow time = 12s, time step = 12
+137 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 2300 solution is converged
+  2300  9.6652e-05  8.6878e-07  8.7737e-07  3.2434e-06  2.3884e-05  0:00:01 1000
+! 2400 solution is converged
+  2400  8.7888e-05  7.9422e-07  8.0059e-07  2.9169e-06  2.1364e-05  0:00:15  900
+Flow time = 13s, time step = 13
+136 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 2400 solution is converged
+  2400  8.7888e-05  7.9422e-07  8.0059e-07  2.9169e-06  2.1364e-05  0:00:17 1000
+! 2500 solution is converged
+  2500  8.0512e-05  7.2455e-07  7.2921e-07  2.6347e-06  1.9211e-05  0:03:00  900
+Flow time = 14s, time step = 14
+135 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 2500 solution is converged
+  2500  8.0512e-05  7.2455e-07  7.2921e-07  2.6347e-06  1.9211e-05  0:03:20 1000
+! 2600 solution is converged
+  2600  7.3301e-05  6.6041e-07  6.6434e-07  2.3906e-06  1.7380e-05  0:00:01  900
+Flow time = 15s, time step = 15
+134 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 2600 solution is converged
+  2600  7.3301e-05  6.6041e-07  6.6434e-07  2.3906e-06  1.7380e-05  0:00:01 1000
+! 2700 solution is converged
+  2700  6.6644e-05  6.0183e-07  6.0605e-07  2.1814e-06  1.5835e-05  0:00:04  900
+Flow time = 16s, time step = 16
+133 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 2700 solution is converged
+  2700  6.6644e-05  6.0183e-07  6.0605e-07  2.1814e-06  1.5835e-05  0:00:05 1000
+! 2800 solution is converged
+  2800  6.1285e-05  5.4923e-07  5.5383e-07  1.9978e-06  1.4496e-05  0:00:01  900
+Flow time = 17s, time step = 17
+132 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 2800 solution is converged
+  2800  6.1285e-05  5.4923e-07  5.5383e-07  1.9978e-06  1.4496e-05  0:00:01 1000
+! 2900 solution is converged
+  2900  5.4994e-05  5.0197e-07  5.0727e-07  1.8375e-06  1.3335e-05  0:00:10  900
+Flow time = 18s, time step = 18
+131 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 2900 solution is converged
+  2900  5.4994e-05  5.0197e-07  5.0727e-07  1.8375e-06  1.3335e-05  0:00:11 1000
+! 3000 solution is converged
+  3000  5.0240e-05  4.5959e-07  4.6557e-07  1.6954e-06  1.2309e-05  0:00:01  900
+Flow time = 19s, time step = 19
+130 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 3000 solution is converged
+  3000  5.0240e-05  4.5959e-07  4.6557e-07  1.6954e-06  1.2309e-05  0:00:01 1000
+! 3100 solution is converged
+  3100  4.5740e-05  4.2157e-07  4.2801e-07  1.5672e-06  1.1383e-05  0:01:14  900
+Flow time = 20s, time step = 20
+129 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 3100 solution is converged
+  3100  4.5740e-05  4.2157e-07  4.2801e-07  1.5672e-06  1.1383e-05  0:01:22 1000
+! 3200 solution is converged
+  3200  4.1918e-05  3.8729e-07  3.9411e-07  1.4496e-06  1.0532e-05  0:00:02  900
+Flow time = 21s, time step = 21
+128 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 3200 solution is converged
+  3200  4.1918e-05  3.8729e-07  3.9411e-07  1.4496e-06  1.0532e-05  0:00:02 1000
+! 3300 solution is converged
+  3300  3.8382e-05  3.5625e-07  3.6310e-07  1.3404e-06  9.7384e-06  0:00:00  900
+Flow time = 22s, time step = 22
+127 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 3300 solution is converged
+  3300  3.8382e-05  3.5625e-07  3.6310e-07  1.3404e-06  9.7384e-06  0:00:00 1000
+! 3400 solution is converged
+  3400  3.5345e-05  3.2799e-07  3.3469e-07  1.2386e-06  8.9946e-06  0:00:30  900
+Flow time = 23s, time step = 23
+126 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 3400 solution is converged
+  3400  3.5345e-05  3.2799e-07  3.3469e-07  1.2386e-06  8.9946e-06  0:00:34 1000
+! 3500 solution is converged
+  3500  3.2636e-05  3.0211e-07  3.0853e-07  1.1432e-06  8.2959e-06  0:03:00  900
+Flow time = 24s, time step = 24
+125 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 3500 solution is converged
+  3500  3.2636e-05  3.0211e-07  3.0853e-07  1.1432e-06  8.2959e-06  0:03:20 1000
+! 3600 solution is converged
+  3600  3.0063e-05  2.7835e-07  2.8437e-07  1.0538e-06  7.6406e-06  0:00:12  900
+Flow time = 25s, time step = 25
+124 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 3600 solution is converged
+  3600  3.0063e-05  2.7835e-07  2.8437e-07  1.0538e-06  7.6406e-06  0:00:14 1000
+! 3700 solution is converged
+  3700  2.7637e-05  2.5643e-07  2.6201e-07  9.7055e-07  7.0292e-06  0:00:01  900
+Flow time = 26s, time step = 26
+123 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 3700 solution is converged
+  3700  2.7637e-05  2.5643e-07  2.6201e-07  9.7055e-07  7.0292e-06  0:00:01 1000
+! 3800 solution is converged
+  3800  2.5458e-05  2.3624e-07  2.4135e-07  8.9326e-07  6.4623e-06  0:00:38  900
+Flow time = 27s, time step = 27
+122 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 3800 solution is converged
+  3800  2.5458e-05  2.3624e-07  2.4135e-07  8.9326e-07  6.4623e-06  0:00:42 1000
+! 3900 solution is converged
+  3900  2.3522e-05  2.1762e-07  2.2232e-07  8.2200e-07  5.9407e-06  0:00:04  900
+Flow time = 28s, time step = 28
+121 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 3900 solution is converged
+  3900  2.3522e-05  2.1762e-07  2.2232e-07  8.2200e-07  5.9407e-06  0:00:05 1000
+! 4000 solution is converged
+  4000  2.1636e-05  2.0047e-07  2.0480e-07  7.5649e-07  5.4619e-06  0:00:00  900
+Flow time = 29s, time step = 29
+120 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 4000 solution is converged
+  4000  2.1636e-05  2.0047e-07  2.0480e-07  7.5649e-07  5.4619e-06  0:00:00 1000
+! 4100 solution is converged
+  4100  1.9888e-05  1.8471e-07  1.8869e-07  6.9663e-07  5.0254e-06  0:00:05  900
+Flow time = 30s, time step = 30
+119 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 4100 solution is converged
+  4100  1.9888e-05  1.8471e-07  1.8869e-07  6.9663e-07  5.0254e-06  0:00:06 1000
+! 4200 solution is converged
+  4200  1.8296e-05  1.7023e-07  1.7390e-07  6.4195e-07  4.6275e-06  0:00:01  900
+Flow time = 31s, time step = 31
+118 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 4200 solution is converged
+  4200  1.8296e-05  1.7023e-07  1.7390e-07  6.4195e-07  4.6275e-06  0:00:01 1000
+! 4300 solution is converged
+  4300  1.6903e-05  1.5695e-07  1.6035e-07  5.9214e-07  4.2658e-06  0:00:59  900
+Flow time = 32s, time step = 32
+117 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 4300 solution is converged
+  4300  1.6903e-05  1.5695e-07  1.6035e-07  5.9214e-07  4.2658e-06  0:01:06 1000
+! 4400 solution is converged
+  4400  1.5599e-05  1.4477e-07  1.4793e-07  5.4669e-07  3.9362e-06  0:00:03  900
+Flow time = 33s, time step = 33
+116 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 4400 solution is converged
+  4400  1.5599e-05  1.4477e-07  1.4793e-07  5.4669e-07  3.9362e-06  0:00:04 1000
+! 4500 solution is converged
+  4500  1.4421e-05  1.3360e-07  1.3655e-07  5.0516e-07  3.6357e-06  0:01:32  900
+Flow time = 34s, time step = 34
+115 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 4500 solution is converged
+  4500  1.4421e-05  1.3360e-07  1.3655e-07  5.0516e-07  3.6357e-06  0:01:43 1000
+! 4600 solution is converged
+  4600  1.3329e-05  1.2336e-07  1.2612e-07  4.6713e-07  3.3605e-06  0:00:06  900
+Flow time = 35s, time step = 35
+114 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 4600 solution is converged
+  4600  1.3329e-05  1.2336e-07  1.2612e-07  4.6713e-07  3.3605e-06  0:00:07 1000
+! 4700 solution is converged
+  4700  1.2321e-05  1.1396e-07  1.1654e-07  4.3226e-07  3.1083e-06  0:01:14  900
+Flow time = 36s, time step = 36
+113 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 4700 solution is converged
+  4700  1.2321e-05  1.1396e-07  1.1654e-07  4.3226e-07  3.1083e-06  0:01:22 1000
+! 4800 solution is converged
+  4800  1.1364e-05  1.0532e-07  1.0773e-07  4.0016e-07  2.8763e-06  0:00:10  900
+Flow time = 37s, time step = 37
+112 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 4800 solution is converged
+  4800  1.1364e-05  1.0532e-07  1.0773e-07  4.0016e-07  2.8763e-06  0:00:11 1000
+! 4900 solution is converged
+  4900  1.0489e-05  9.7380e-08  9.9634e-08  3.7057e-07  2.6625e-06  0:00:01  900
+Flow time = 38s, time step = 38
+111 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 4900 solution is converged
+  4900  1.0489e-05  9.7380e-08  9.9634e-08  3.7057e-07  2.6625e-06  0:00:01 1000
+! 5000 solution is converged
+  5000  9.6965e-06  9.0067e-08  9.2173e-08  3.4324e-07  2.4650e-06  0:00:08  900
+Flow time = 39s, time step = 39
+110 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 5000 solution is converged
+  5000  9.6965e-06  9.0067e-08  9.2173e-08  3.4324e-07  2.4650e-06  0:00:09 1000
+! 5100 solution is converged
+  5100  8.9637e-06  8.3327e-08  8.5293e-08  3.1793e-07  2.2822e-06  0:00:01  900
+Flow time = 40s, time step = 40
+109 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 5100 solution is converged
+  5100  8.9637e-06  8.3327e-08  8.5293e-08  3.1793e-07  2.2822e-06  0:00:01 1000
+! 5200 solution is converged
+  5200  8.2909e-06  7.7112e-08  7.8943e-08  2.9451e-07  2.1132e-06  0:01:14  900
+Flow time = 41s, time step = 41
+108 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 5200 solution is converged
+  5200  8.2909e-06  7.7112e-08  7.8943e-08  2.9451e-07  2.1132e-06  0:01:22 1000
+! 5300 solution is converged
+  5300  7.6638e-06  7.1374e-08  7.3078e-08  2.7283e-07  1.9569e-06  0:00:01  900
+Flow time = 42s, time step = 42
+107 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 5300 solution is converged
+  5300  7.6638e-06  7.1374e-08  7.3078e-08  2.7283e-07  1.9569e-06  0:00:01 1000
+! 5400 solution is converged
+  5400  7.0932e-06  6.6076e-08  6.7660e-08  2.5274e-07  1.8121e-06  0:01:55  900
+Flow time = 43s, time step = 43
+106 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 5400 solution is converged
+  5400  7.0932e-06  6.6076e-08  6.7660e-08  2.5274e-07  1.8121e-06  0:02:08 1000
+! 5500 solution is converged
+  5500  6.5564e-06  6.1180e-08  6.2651e-08  2.3414e-07  1.6782e-06  0:00:12  900
+Flow time = 44s, time step = 44
+105 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 5500 solution is converged
+  5500  6.5564e-06  6.1180e-08  6.2651e-08  2.3414e-07  1.6782e-06  0:00:14 1000
+! 5600 solution is converged
+  5600  6.0721e-06  5.6656e-08  5.8022e-08  2.1693e-07  1.5543e-06  0:02:24  900
+Flow time = 45s, time step = 45
+104 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 5600 solution is converged
+  5600  6.0721e-06  5.6656e-08  5.8022e-08  2.1693e-07  1.5543e-06  0:02:40 1000
+! 5700 solution is converged
+  5700  5.6183e-06  5.2474e-08  5.3742e-08  2.0100e-07  1.4397e-06  0:00:10  900
+Flow time = 46s, time step = 46
+103 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 5700 solution is converged
+  5700  5.6183e-06  5.2474e-08  5.3742e-08  2.0100e-07  1.4397e-06  0:00:11 1000
+! 5800 solution is converged
+  5800  5.1982e-06  4.8608e-08  4.9784e-08  1.8626e-07  1.3338e-06  0:00:01  900
+Flow time = 47s, time step = 47
+102 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 5800 solution is converged
+  5800  5.1982e-06  4.8608e-08  4.9784e-08  1.8626e-07  1.3338e-06  0:00:01 1000
+! 5900 solution is converged
+  5900  4.8138e-06  4.5033e-08  4.6125e-08  1.7263e-07  1.2359e-06  0:00:10  900
+Flow time = 48s, time step = 48
+101 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 5900 solution is converged
+  5900  4.8138e-06  4.5033e-08  4.6125e-08  1.7263e-07  1.2359e-06  0:00:11 1000
+! 6000 solution is converged
+  6000  4.4620e-06  4.1728e-08  4.2742e-08  1.6002e-07  1.1454e-06  0:00:01  900
+Flow time = 49s, time step = 49
+100 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 6000 solution is converged
+  6000  4.4620e-06  4.1728e-08  4.2742e-08  1.6002e-07  1.1454e-06  0:00:01 1000
+! 6100 solution is converged
+  6100  4.1389e-06  3.8671e-08  3.9613e-08  1.4836e-07  1.0617e-06  0:00:38  900
+Flow time = 50s, time step = 50
+99 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 6100 solution is converged
+  6100  4.1389e-06  3.8671e-08  3.9613e-08  1.4836e-07  1.0617e-06  0:00:42 1000
+! 6200 solution is converged
+  6200  3.8342e-06  3.5843e-08  3.6718e-08  1.3757e-07  9.8426e-07  0:00:01  900
+Flow time = 51s, time step = 51
+98 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 6200 solution is converged
+  6200  3.8342e-06  3.5843e-08  3.6718e-08  1.3757e-07  9.8426e-07  0:00:01 1000
+! 6300 solution is converged
+  6300  3.5480e-06  3.3226e-08  3.4040e-08  1.2758e-07  9.1263e-07  0:00:59  900
+Flow time = 52s, time step = 52
+97 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 6300 solution is converged
+  6300  3.5480e-06  3.3226e-08  3.4040e-08  1.2758e-07  9.1263e-07  0:01:06 1000
+! 6400 solution is converged
+  6400  3.2969e-06  3.0805e-08  3.1561e-08  1.1833e-07  8.4634e-07  0:00:06  900
+Flow time = 53s, time step = 53
+96 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 6400 solution is converged
+  6400  3.2969e-06  3.0805e-08  3.1561e-08  1.1833e-07  8.4634e-07  0:00:07 1000
+! 6500 solution is converged
+  6500  3.0572e-06  2.8563e-08  2.9266e-08  1.0976e-07  7.8495e-07  0:01:14  900
+Flow time = 54s, time step = 54
+95 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 6500 solution is converged
+  6500  3.0572e-06  2.8563e-08  2.9266e-08  1.0976e-07  7.8495e-07  0:01:22 1000
+! 6600 solution is converged
+  6600  2.8338e-06  2.6488e-08  2.7141e-08  1.0183e-07  7.2809e-07  0:00:05  900
+Flow time = 55s, time step = 55
+94 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 6600 solution is converged
+  6600  2.8338e-06  2.6488e-08  2.7141e-08  1.0183e-07  7.2809e-07  0:00:06 1000
+! 6700 solution is converged
+  6700  2.6337e-06  2.4566e-08  2.5173e-08  9.4471e-08  6.7540e-07  0:00:16  900
+Flow time = 56s, time step = 56
+93 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 6700 solution is converged
+  6700  2.6337e-06  2.4566e-08  2.5173e-08  9.4471e-08  6.7540e-07  0:00:17 1000
+! 6800 solution is converged
+  6800  2.4423e-06  2.2785e-08  2.3350e-08  8.7652e-08  6.2657e-07  0:00:03  900
+Flow time = 57s, time step = 57
+92 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 6800 solution is converged
+  6800  2.4423e-06  2.2785e-08  2.3350e-08  8.7652e-08  6.2657e-07  0:00:03 1000
+! 6900 solution is converged
+  6900  2.2635e-06  2.1136e-08  2.1660e-08  8.1330e-08  5.8131e-07  0:01:55  900
+Flow time = 58s, time step = 58
+91 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 6900 solution is converged
+  6900  2.2635e-06  2.1136e-08  2.1660e-08  8.1330e-08  5.8131e-07  0:02:08 1000
+! 7000 solution is converged
+  7000  2.0996e-06  1.9607e-08  2.0094e-08  7.5467e-08  5.3934e-07  0:00:08  900
+Flow time = 59s, time step = 59
+90 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 7000 solution is converged
+  7000  2.0996e-06  1.9607e-08  2.0094e-08  7.5467e-08  5.3934e-07  0:00:09 1000
+! 7100 solution is converged
+  7100  1.9490e-06  1.8190e-08  1.8643e-08  7.0030e-08  5.0043e-07  0:00:00  900
+Flow time = 60s, time step = 60
+89 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 7100 solution is converged
+  7100  1.9490e-06  1.8190e-08  1.8643e-08  7.0030e-08  5.0043e-07  0:00:00 1000
+! 7200 solution is converged
+  7200  1.8083e-06  1.6877e-08  1.7297e-08  6.4986e-08  4.6435e-07  0:00:10  900
+Flow time = 61s, time step = 61
+88 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 7200 solution is converged
+  7200  1.8083e-06  1.6877e-08  1.7297e-08  6.4986e-08  4.6435e-07  0:00:11 1000
+! 7300 solution is converged
+  7300  1.6795e-06  1.5660e-08  1.6050e-08  6.0309e-08  4.3089e-07  0:00:01  900
+Flow time = 62s, time step = 62
+87 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 7300 solution is converged
+  7300  1.6795e-06  1.5660e-08  1.6050e-08  6.0309e-08  4.3089e-07  0:00:01 1000
+! 7400 solution is converged
+  7400  1.5584e-06  1.4531e-08  1.4893e-08  5.5970e-08  3.9986e-07  0:00:30  900
+Flow time = 63s, time step = 63
+86 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 7400 solution is converged
+  7400  1.5584e-06  1.4531e-08  1.4893e-08  5.5970e-08  3.9986e-07  0:00:34 1000
+! 7500 solution is converged
+  7500  1.4447e-06  1.3484e-08  1.3821e-08  5.1945e-08  3.7108e-07  0:00:03  900
+Flow time = 64s, time step = 64
+85 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 7500 solution is converged
+  7500  1.4447e-06  1.3484e-08  1.3821e-08  5.1945e-08  3.7108e-07  0:00:03 1000
+! 7600 solution is converged
+  7600  1.3416e-06  1.2513e-08  1.2826e-08  4.8211e-08  3.4439e-07  0:00:16  900
+Flow time = 65s, time step = 65
+84 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 7600 solution is converged
+  7600  1.3416e-06  1.2513e-08  1.2826e-08  4.8211e-08  3.4439e-07  0:00:17 1000
+! 7700 solution is converged
+  7700  1.2453e-06  1.1613e-08  1.1903e-08  4.4748e-08  3.1963e-07  0:00:01  900
+Flow time = 66s, time step = 66
+83 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 7700 solution is converged
+  7700  1.2453e-06  1.1613e-08  1.1903e-08  4.4748e-08  3.1963e-07  0:00:01 1000
+! 7800 solution is converged
+  7800  1.1559e-06  1.0778e-08  1.1048e-08  4.1535e-08  2.9666e-07  0:01:14  900
+Flow time = 67s, time step = 67
+82 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 7800 solution is converged
+  7800  1.1559e-06  1.0778e-08  1.1048e-08  4.1535e-08  2.9666e-07  0:01:22 1000
+! 7900 solution is converged
+  7900  1.0725e-06  1.0003e-08  1.0254e-08  3.8554e-08  2.7536e-07  0:00:01  900
+Flow time = 68s, time step = 68
+81 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 7900 solution is converged
+  7900  1.0725e-06  1.0003e-08  1.0254e-08  3.8554e-08  2.7536e-07  0:00:01 1000
+! 8000 solution is converged
+  8000  9.9534e-07  9.2848e-09  9.5176e-09  3.5788e-08  2.5560e-07  0:01:55  900
+Flow time = 69s, time step = 69
+80 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 8000 solution is converged
+  8000  9.9534e-07  9.2848e-09  9.5176e-09  3.5788e-08  2.5560e-07  0:02:08 1000
+! 8100 solution is converged
+  8100  9.2634e-07  8.6182e-09  8.8345e-09  3.3222e-08  2.3726e-07  0:00:06  900
+Flow time = 70s, time step = 70
+79 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 8100 solution is converged
+  8100  9.2634e-07  8.6182e-09  8.8345e-09  3.3222e-08  2.3726e-07  0:00:07 1000
+! 8200 solution is converged
+  8200  8.5987e-07  7.9998e-09  8.2007e-09  3.0841e-08  2.2025e-07  0:01:33  900
+Flow time = 71s, time step = 71
+78 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 8200 solution is converged
+  8200  8.5987e-07  7.9998e-09  8.2007e-09  3.0841e-08  2.2025e-07  0:01:43 1000
+! 8300 solution is converged
+  8300  7.9896e-07  7.4260e-09  7.6126e-09  2.8631e-08  2.0446e-07  0:00:08  900
+Flow time = 72s, time step = 72
+77 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 8300 solution is converged
+  8300  7.9896e-07  7.4260e-09  7.6126e-09  2.8631e-08  2.0446e-07  0:00:09 1000
+! 8400 solution is converged
+  8400  7.4092e-07  6.8936e-09  7.0670e-09  2.6580e-08  1.8981e-07  0:00:01  900
+Flow time = 73s, time step = 73
+76 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 8400 solution is converged
+  8400  7.4092e-07  6.8936e-09  7.0670e-09  2.6580e-08  1.8981e-07  0:00:01 1000
+! 8500 solution is converged
+  8500  6.8757e-07  6.3995e-09  6.5605e-09  2.4677e-08  1.7622e-07  0:00:19  900
+Flow time = 74s, time step = 74
+75 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 8500 solution is converged
+  8500  6.8757e-07  6.3995e-09  6.5605e-09  2.4677e-08  1.7622e-07  0:00:22 1000
+! 8600 solution is converged
+  8600  6.3814e-07  5.9410e-09  6.0906e-09  2.2911e-08  1.6360e-07  0:00:02  900
+Flow time = 75s, time step = 75
+74 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 8600 solution is converged
+  8600  6.3814e-07  5.9410e-09  6.0906e-09  2.2911e-08  1.6360e-07  0:00:02 1000
+! 8700 solution is converged
+  8700  5.9224e-07  5.5155e-09  5.6545e-09  2.1271e-08  1.5189e-07  0:01:14  900
+Flow time = 76s, time step = 76
+73 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 8700 solution is converged
+  8700  5.9224e-07  5.5155e-09  5.6545e-09  2.1271e-08  1.5189e-07  0:01:22 1000
+! 8800 solution is converged
+  8800  5.4987e-07  5.1206e-09  5.2497e-09  1.9749e-08  1.4102e-07  0:00:01  900
+Flow time = 77s, time step = 77
+72 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 8800 solution is converged
+  8800  5.4987e-07  5.1206e-09  5.2497e-09  1.9749e-08  1.4102e-07  0:00:01 1000
+! 8900 solution is converged
+  8900  5.1100e-07  4.7541e-09  4.8740e-09  1.8337e-08  1.3093e-07  0:01:14  900
+Flow time = 78s, time step = 78
+71 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 8900 solution is converged
+  8900  5.1100e-07  4.7541e-09  4.8740e-09  1.8337e-08  1.3093e-07  0:01:22 1000
+! 9000 solution is converged
+  9000  4.7445e-07  4.4140e-09  4.5253e-09  1.7025e-08  1.2156e-07  0:00:08  900
+Flow time = 79s, time step = 79
+70 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 9000 solution is converged
+  9000  4.7445e-07  4.4140e-09  4.5253e-09  1.7025e-08  1.2156e-07  0:00:09 1000
+! 9100 solution is converged
+  9100  4.4041e-07  4.0982e-09  4.2016e-09  1.5808e-08  1.1287e-07  0:01:32  900
+Flow time = 80s, time step = 80
+69 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 9100 solution is converged
+  9100  4.4041e-07  4.0982e-09  4.2016e-09  1.5808e-08  1.1287e-07  0:01:43 1000
+! 9200 solution is converged
+  9200  4.0875e-07  3.8050e-09  3.9011e-09  1.4677e-08  1.0480e-07  0:00:10  900
+Flow time = 81s, time step = 81
+68 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 9200 solution is converged
+  9200  4.0875e-07  3.8050e-09  3.9011e-09  1.4677e-08  1.0480e-07  0:00:11 1000
+! 9300 solution is converged
+  9300  3.7946e-07  3.5329e-09  3.6221e-09  1.3628e-08  9.7305e-08  0:00:00  900
+Flow time = 82s, time step = 82
+67 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 9300 solution is converged
+  9300  3.7946e-07  3.5329e-09  3.6221e-09  1.3628e-08  9.7305e-08  0:00:00 1000
+! 9400 solution is converged
+  9400  3.5229e-07  3.2803e-09  3.3632e-09  1.2654e-08  9.0349e-08  0:00:08  900
+Flow time = 83s, time step = 83
+66 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 9400 solution is converged
+  9400  3.5229e-07  3.2803e-09  3.3632e-09  1.2654e-08  9.0349e-08  0:00:09 1000
+! 9500 solution is converged
+  9500  3.2762e-07  3.0459e-09  3.1228e-09  1.1750e-08  8.3892e-08  0:00:01  900
+Flow time = 84s, time step = 84
+65 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 9500 solution is converged
+  9500  3.2762e-07  3.0459e-09  3.1228e-09  1.1750e-08  8.3892e-08  0:00:01 1000
+! 9600 solution is converged
+  9600  3.0425e-07  2.8282e-09  2.8997e-09  1.0910e-08  7.7898e-08  0:01:14  900
+Flow time = 85s, time step = 85
+64 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 9600 solution is converged
+  9600  3.0425e-07  2.8282e-09  2.8997e-09  1.0910e-08  7.7898e-08  0:01:22 1000
+! 9700 solution is converged
+  9700  2.8035e-07  2.6260e-09  2.6924e-09  1.0131e-08  7.2334e-08  0:00:02  900
+Flow time = 86s, time step = 86
+63 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 9700 solution is converged
+  9700  2.8035e-07  2.6260e-09  2.6924e-09  1.0131e-08  7.2334e-08  0:00:02 1000
+! 9800 solution is converged
+  9800  2.5993e-07  2.4385e-09  2.5002e-09  9.4073e-09  6.7167e-08  0:01:14  900
+Flow time = 87s, time step = 87
+62 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 9800 solution is converged
+  9800  2.5993e-07  2.4385e-09  2.5002e-09  9.4073e-09  6.7167e-08  0:01:22 1000
+! 9900 solution is converged
+  9900  2.4189e-07  2.2643e-09  2.3215e-09  8.7354e-09  6.2369e-08  0:00:04  900
+Flow time = 88s, time step = 88
+61 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+! 9900 solution is converged
+  9900  2.4189e-07  2.2643e-09  2.3215e-09  8.7354e-09  6.2369e-08  0:00:05 1000
+!10000 solution is converged
+ 10000  2.2463e-07  2.1026e-09  2.1558e-09  8.1116e-09  5.7915e-08  0:03:00  900
+Flow time = 89s, time step = 89
+60 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+!10000 solution is converged
+ 10000  2.2463e-07  2.1026e-09  2.1558e-09  8.1116e-09  5.7915e-08  0:03:20 1000
+!10100 solution is converged
+ 10100  2.1263e-07  1.9523e-09  2.0017e-09  7.5324e-09  5.3782e-08  0:00:08  900
+Flow time = 90s, time step = 90
+59 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+!10100 solution is converged
+ 10100  2.1263e-07  1.9523e-09  2.0017e-09  7.5324e-09  5.3782e-08  0:00:09 1000
+!10200 solution is converged
+ 10200  1.9690e-07  1.8130e-09  1.8588e-09  6.9945e-09  4.9940e-08  0:00:00  900
+Flow time = 91s, time step = 91
+58 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+!10200 solution is converged
+ 10200  1.9690e-07  1.8130e-09  1.8588e-09  6.9945e-09  4.9940e-08  0:00:00 1000
+!10300 solution is converged
+ 10300  1.8328e-07  1.6835e-09  1.7262e-09  6.4952e-09  4.6375e-08  0:00:02  900
+Flow time = 92s, time step = 92
+57 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+!10300 solution is converged
+ 10300  1.8328e-07  1.6835e-09  1.7262e-09  6.4952e-09  4.6375e-08  0:00:02 1000
+!10400 solution is converged
+ 10400  1.6976e-07  1.5634e-09  1.6029e-09  6.0315e-09  4.3064e-08  0:00:47  900
+Flow time = 93s, time step = 93
+56 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+!10400 solution is converged
+ 10400  1.6976e-07  1.5634e-09  1.6029e-09  6.0315e-09  4.3064e-08  0:00:53 1000
+!10500 solution is converged
+ 10500  1.5789e-07  1.4518e-09  1.4885e-09  5.6010e-09  3.9990e-08  0:00:03  900
+Flow time = 94s, time step = 94
+55 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+!10500 solution is converged
+ 10500  1.5789e-07  1.4518e-09  1.4885e-09  5.6010e-09  3.9990e-08  0:00:03 1000
+!10600 solution is converged
+ 10600  1.4666e-07  1.3481e-09  1.3823e-09  5.2013e-09  3.7136e-08  0:00:30  900
+Flow time = 95s, time step = 95
+54 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+!10600 solution is converged
+ 10600  1.4666e-07  1.3481e-09  1.3823e-09  5.2013e-09  3.7136e-08  0:00:34 1000
+!10700 solution is converged
+ 10700  1.3616e-07  1.2520e-09  1.2837e-09  4.8301e-09  3.4486e-08  0:00:01  900
+Flow time = 96s, time step = 96
+53 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+!10700 solution is converged
+ 10700  1.3616e-07  1.2520e-09  1.2837e-09  4.8301e-09  3.4486e-08  0:00:01 1000
+!10800 solution is converged
+ 10800  1.2646e-07  1.1626e-09  1.1921e-09  4.4854e-09  3.2026e-08  0:03:00  900
+Flow time = 97s, time step = 97
+52 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+!10800 solution is converged
+ 10800  1.2646e-07  1.1626e-09  1.1921e-09  4.4854e-09  3.2026e-08  0:03:20 1000
+!10900 solution is converged
+ 10900  1.1764e-07  1.0797e-09  1.1070e-09  4.1654e-09  2.9741e-08  0:00:05  900
+Flow time = 98s, time step = 98
+51 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+!10900 solution is converged
+ 10900  1.1764e-07  1.0797e-09  1.1070e-09  4.1654e-09  2.9741e-08  0:00:06 1000
+!11000 solution is converged
+ 11000  1.0921e-07  1.0026e-09  1.0281e-09  3.8682e-09  2.7619e-08  0:00:00  900
+Flow time = 99s, time step = 99
+50 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+!11000 solution is converged
+ 11000  1.0921e-07  1.0026e-09  1.0281e-09  3.8682e-09  2.7619e-08  0:00:00 1000
+!11100 solution is converged
+ 11100  1.0141e-07  9.3109e-10  9.5473e-10  3.5922e-09  2.5648e-08  0:00:19  900
+Flow time = 100s, time step = 100
+49 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+!11100 solution is converged
+ 11100  1.0141e-07  9.3109e-10  9.5473e-10  3.5922e-09  2.5648e-08  0:00:21 1000
+!11200 solution is converged
+ 11200  9.4174e-08  8.6468e-10  8.8661e-10  3.3360e-09  2.3819e-08  0:00:00  900
+Flow time = 101s, time step = 101
+48 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+!11200 solution is converged
+ 11200  9.4174e-08  8.6468e-10  8.8661e-10  3.3360e-09  2.3819e-08  0:00:00 1000
+!11300 solution is converged
+ 11300  8.7056e-08  8.0300e-10  8.2340e-10  3.0980e-09  2.2120e-08  0:00:30  900
+Flow time = 102s, time step = 102
+47 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+!11300 solution is converged
+ 11300  8.7056e-08  8.0300e-10  8.2340e-10  3.0980e-09  2.2120e-08  0:00:34 1000
+!11400 solution is converged
+ 11400  8.0929e-08  7.4573e-10  7.6466e-10  2.8771e-09  2.0542e-08  0:00:02  900
+Flow time = 103s, time step = 103
+46 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+!11400 solution is converged
+ 11400  8.0929e-08  7.4573e-10  7.6466e-10  2.8771e-09  2.0542e-08  0:00:02 1000
+!11500 solution is converged
+ 11500  7.5166e-08  6.9256e-10  7.1011e-10  2.6719e-09  1.9077e-08  0:00:24  900
+Flow time = 104s, time step = 104
+45 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+!11500 solution is converged
+ 11500  7.5166e-08  6.9256e-10  7.1011e-10  2.6719e-09  1.9077e-08  0:00:27 1000
+!11600 solution is converged
+ 11600  6.9804e-08  6.4316e-10  6.5949e-10  2.4813e-09  1.7717e-08  0:00:01  900
+Flow time = 105s, time step = 105
+44 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+!11600 solution is converged
+ 11600  6.9804e-08  6.4316e-10  6.5949e-10  2.4813e-09  1.7717e-08  0:00:01 1000
+!11700 solution is converged
+ 11700  6.4811e-08  5.9729e-10  6.1246e-10  2.3044e-09  1.6453e-08  0:00:59  900
+Flow time = 106s, time step = 106
+43 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+!11700 solution is converged
+ 11700  6.4811e-08  5.9729e-10  6.1246e-10  2.3044e-09  1.6453e-08  0:01:06 1000
+!11800 solution is converged
+ 11800  6.0332e-08  5.5470e-10  5.6879e-10  2.1400e-09  1.5280e-08  0:00:01  900
+Flow time = 107s, time step = 107
+42 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+!11800 solution is converged
+ 11800  6.0332e-08  5.5470e-10  5.6879e-10  2.1400e-09  1.5280e-08  0:00:01 1000
+!11900 solution is converged
+ 11900  5.6018e-08  5.1514e-10  5.2824e-10  1.9875e-09  1.4191e-08  0:00:59  900
+Flow time = 108s, time step = 108
+41 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+!11900 solution is converged
+ 11900  5.6018e-08  5.1514e-10  5.2824e-10  1.9875e-09  1.4191e-08  0:01:06 1000
+!12000 solution is converged
+ 12000  5.2027e-08  4.7841e-10  4.9057e-10  1.8457e-09  1.3179e-08  0:00:06  900
+Flow time = 109s, time step = 109
+40 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+!12000 solution is converged
+ 12000  5.2027e-08  4.7841e-10  4.9057e-10  1.8457e-09  1.3179e-08  0:00:07 1000
+!12100 solution is converged
+ 12100  4.8322e-08  4.4430e-10  4.5560e-10  1.7141e-09  1.2239e-08  0:00:38  900
+Flow time = 110s, time step = 110
+39 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+!12100 solution is converged
+ 12100  4.8322e-08  4.4430e-10  4.5560e-10  1.7141e-09  1.2239e-08  0:00:42 1000
+!12200 solution is converged
+ 12200  4.4877e-08  4.1263e-10  4.2312e-10  1.5919e-09  1.1367e-08  0:00:01  900
+Flow time = 111s, time step = 111
+38 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+!12200 solution is converged
+ 12200  4.4877e-08  4.1263e-10  4.2312e-10  1.5919e-09  1.1367e-08  0:00:01 1000
+!12300 solution is converged
+ 12300  4.1683e-08  3.8322e-10  3.9294e-10  1.4784e-09  1.0556e-08  0:00:30  900
+Flow time = 112s, time step = 112
+37 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+!12300 solution is converged
+ 12300  4.1683e-08  3.8322e-10  3.9294e-10  1.4784e-09  1.0556e-08  0:00:34 1000
+!12400 solution is converged
+ 12400  3.8709e-08  3.5589e-10  3.6494e-10  1.3730e-09  9.8037e-09  0:00:00  900
+Flow time = 113s, time step = 113
+36 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+!12400 solution is converged
+ 12400  3.8709e-08  3.5589e-10  3.6494e-10  1.3730e-09  9.8037e-09  0:00:00 1000
+!12500 solution is converged
+ 12500  3.5922e-08  3.3053e-10  3.3892e-10  1.2751e-09  9.1047e-09  0:00:08  900
+Flow time = 114s, time step = 114
+35 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+!12500 solution is converged
+ 12500  3.5922e-08  3.3053e-10  3.3892e-10  1.2751e-09  9.1047e-09  0:00:09 1000
+!12600 solution is converged
+ 12600  3.3351e-08  3.0697e-10  3.1475e-10  1.1842e-09  8.4557e-09  0:00:01  900
+Flow time = 115s, time step = 115
+34 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+!12600 solution is converged
+ 12600  3.3351e-08  3.0697e-10  3.1475e-10  1.1842e-09  8.4557e-09  0:00:01 1000
+!12700 solution is converged
+ 12700  3.0960e-08  2.8507e-10  2.9234e-10  1.0998e-09  7.8529e-09  0:00:03  900
+Flow time = 116s, time step = 116
+33 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+!12700 solution is converged
+ 12700  3.0960e-08  2.8507e-10  2.9234e-10  1.0998e-09  7.8529e-09  0:00:04 1000
+!12800 solution is converged
+ 12800  2.8757e-08  2.6475e-10  2.7150e-10  1.0214e-09  7.2931e-09  0:01:14  900
+Flow time = 117s, time step = 117
+32 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+!12800 solution is converged
+ 12800  2.8757e-08  2.6475e-10  2.7150e-10  1.0214e-09  7.2931e-09  0:01:22 1000
+!12900 solution is converged
+ 12900  2.6706e-08  2.4588e-10  2.5215e-10  9.4862e-10  6.7733e-09  0:00:06  900
+Flow time = 118s, time step = 118
+31 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+!12900 solution is converged
+ 12900  2.6706e-08  2.4588e-10  2.5215e-10  9.4862e-10  6.7733e-09  0:00:07 1000
+!13000 solution is converged
+ 13000  2.4802e-08  2.2835e-10  2.3418e-10  8.8101e-10  6.2905e-09  0:00:47  900
+Flow time = 119s, time step = 119
+30 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+!13000 solution is converged
+ 13000  2.4802e-08  2.2835e-10  2.3418e-10  8.8101e-10  6.2905e-09  0:00:53 1000
+!13100 solution is converged
+ 13100  2.3034e-08  2.1208e-10  2.1749e-10  8.1821e-10  5.8421e-09  0:00:02  900
+Flow time = 120s, time step = 120
+29 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+!13100 solution is converged
+ 13100  2.3034e-08  2.1208e-10  2.1749e-10  8.1821e-10  5.8421e-09  0:00:02 1000
+!13200 solution is converged
+ 13200  2.1393e-08  1.9696e-10  2.0199e-10  7.5989e-10  5.4257e-09  0:00:38  900
+Flow time = 121s, time step = 121
+28 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+!13200 solution is converged
+ 13200  2.1393e-08  1.9696e-10  2.0199e-10  7.5989e-10  5.4257e-09  0:00:42 1000
+!13300 solution is converged
+ 13300  1.9868e-08  1.8293e-10  1.8759e-10  7.0573e-10  5.0390e-09  0:00:01  900
+Flow time = 122s, time step = 122
+27 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+!13300 solution is converged
+ 13300  1.9868e-08  1.8293e-10  1.8759e-10  7.0573e-10  5.0390e-09  0:00:01 1000
+!13400 solution is converged
+ 13400  1.8452e-08  1.6989e-10  1.7422e-10  6.5543e-10  4.6799e-09  0:00:30  900
+Flow time = 123s, time step = 123
+26 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+!13400 solution is converged
+ 13400  1.8452e-08  1.6989e-10  1.7422e-10  6.5543e-10  4.6799e-09  0:00:34 1000
+!13500 solution is converged
+ 13500  1.7137e-08  1.5778e-10  1.6180e-10  6.0872e-10  4.3463e-09  0:00:02  900
+Flow time = 124s, time step = 124
+25 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+!13500 solution is converged
+ 13500  1.7137e-08  1.5778e-10  1.6180e-10  6.0872e-10  4.3463e-09  0:00:02 1000
+!13600 solution is converged
+ 13600  1.5916e-08  1.4654e-10  1.5027e-10  5.6533e-10  4.0366e-09  0:00:10  900
+Flow time = 125s, time step = 125
+24 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+!13600 solution is converged
+ 13600  1.5916e-08  1.4654e-10  1.5027e-10  5.6533e-10  4.0366e-09  0:00:11 1000
+!13700 solution is converged
+ 13700  1.4782e-08  1.3609e-10  1.3956e-10  5.2504e-10  3.7489e-09  0:00:01  900
+Flow time = 126s, time step = 126
+23 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+!13700 solution is converged
+ 13700  1.4782e-08  1.3609e-10  1.3956e-10  5.2504e-10  3.7489e-09  0:00:01 1000
+!13800 solution is converged
+ 13800  1.3728e-08  1.2640e-10  1.2962e-10  4.8762e-10  3.4817e-09  0:00:08  900
+Flow time = 127s, time step = 127
+22 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+!13800 solution is converged
+ 13800  1.3728e-08  1.2640e-10  1.2962e-10  4.8762e-10  3.4817e-09  0:00:09 1000
+!13900 solution is converged
+ 13900  1.2750e-08  1.1739e-10  1.2038e-10  4.5287e-10  3.2336e-09  0:01:14  900
+Flow time = 128s, time step = 128
+21 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+!13900 solution is converged
+ 13900  1.2750e-08  1.1739e-10  1.2038e-10  4.5287e-10  3.2336e-09  0:01:22 1000
+!14000 solution is converged
+ 14000  1.1841e-08  1.0902e-10  1.1180e-10  4.2060e-10  3.0032e-09  0:00:02  900
+Flow time = 129s, time step = 129
+20 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+!14000 solution is converged
+ 14000  1.1841e-08  1.0902e-10  1.1180e-10  4.2060e-10  3.0032e-09  0:00:02 1000
+!14100 solution is converged
+ 14100  1.0997e-08  1.0125e-10  1.0384e-10  3.9062e-10  2.7891e-09  0:00:19  900
+Flow time = 130s, time step = 130
+19 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+!14100 solution is converged
+ 14100  1.0997e-08  1.0125e-10  1.0384e-10  3.9062e-10  2.7891e-09  0:00:22 1000
+!14200 solution is converged
+ 14200  1.0214e-08  9.4039e-11  9.6437e-11  3.6278e-10  2.5904e-09  0:00:24  900
+Flow time = 131s, time step = 131
+18 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+!14200 solution is converged
+ 14200  1.0214e-08  9.4039e-11  9.6437e-11  3.6278e-10  2.5904e-09  0:00:27 1000
+!14300 solution is converged
+ 14300  9.4859e-09  8.7338e-11  8.9565e-11  3.3693e-10  2.4058e-09  0:00:00  900
+Flow time = 132s, time step = 132
+17 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+!14300 solution is converged
+ 14300  9.4859e-09  8.7338e-11  8.9565e-11  3.3693e-10  2.4058e-09  0:00:00 1000
+!14400 solution is converged
+ 14400  8.8100e-09  8.1115e-11  8.3183e-11  3.1292e-10  2.2343e-09  0:00:19  900
+Flow time = 133s, time step = 133
+16 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+!14400 solution is converged
+ 14400  8.8100e-09  8.1115e-11  8.3183e-11  3.1292e-10  2.2343e-09  0:00:22 1000
+!14500 solution is converged
+ 14500  8.1822e-09  7.5335e-11  7.7256e-11  2.9062e-10  2.0751e-09  0:01:14  900
+Flow time = 134s, time step = 134
+15 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+!14500 solution is converged
+ 14500  8.1822e-09  7.5335e-11  7.7256e-11  2.9062e-10  2.0751e-09  0:01:22 1000
+!14600 solution is converged
+ 14600  7.5992e-09  6.9967e-11  7.1751e-11  2.6991e-10  1.9272e-09  0:00:02  900
+Flow time = 135s, time step = 135
+14 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+!14600 solution is converged
+ 14600  7.5992e-09  6.9967e-11  7.1751e-11  2.6991e-10  1.9272e-09  0:00:02 1000
+!14700 solution is converged
+ 14700  7.0577e-09  6.4982e-11  6.6638e-11  2.5068e-10  1.7899e-09  0:00:19  900
+Flow time = 136s, time step = 136
+13 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+!14700 solution is converged
+ 14700  7.0577e-09  6.4982e-11  6.6638e-11  2.5068e-10  1.7899e-09  0:00:22 1000
+!14800 solution is converged
+ 14800  6.5548e-09  6.0351e-11  6.1890e-11  2.3281e-10  1.6624e-09  0:01:32  900
+Flow time = 137s, time step = 137
+12 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+!14800 solution is converged
+ 14800  6.5548e-09  6.0351e-11  6.1890e-11  2.3281e-10  1.6624e-09  0:01:43 1000
+!14900 solution is converged
+ 14900  6.0877e-09  5.6051e-11  5.7480e-11  2.1622e-10  1.5439e-09  0:00:01  900
+Flow time = 138s, time step = 138
+11 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+!14900 solution is converged
+ 14900  6.0877e-09  5.6051e-11  5.7480e-11  2.1622e-10  1.5439e-09  0:00:01 1000
+!15000 solution is converged
+ 15000  5.6530e-09  5.2057e-11  5.3385e-11  2.0082e-10  1.4339e-09  0:00:12  900
+Flow time = 139s, time step = 139
+10 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+!15000 solution is converged
+ 15000  5.6530e-09  5.2057e-11  5.3385e-11  2.0082e-10  1.4339e-09  0:00:14 1000
+!15100 solution is converged
+ 15100  5.2502e-09  4.8348e-11  4.9581e-11  1.8651e-10  1.3317e-09  0:00:30  900
+Flow time = 140s, time step = 140
+9 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+!15100 solution is converged
+ 15100  5.2502e-09  4.8348e-11  4.9581e-11  1.8651e-10  1.3317e-09  0:00:34 1000
+!15200 solution is converged
+ 15200  4.8761e-09  4.4904e-11  4.6048e-11  1.7322e-10  1.2368e-09  0:03:00  900
+Flow time = 141s, time step = 141
+8 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+!15200 solution is converged
+ 15200  4.8761e-09  4.4904e-11  4.6048e-11  1.7322e-10  1.2368e-09  0:03:20 1000
+!15300 solution is converged
+ 15300  4.5286e-09  4.1704e-11  4.2767e-11  1.6087e-10  1.1487e-09  0:00:02  900
+Flow time = 142s, time step = 142
+7 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+!15300 solution is converged
+ 15300  4.5286e-09  4.1704e-11  4.2767e-11  1.6087e-10  1.1487e-09  0:00:02 1000
+!15400 solution is converged
+ 15400  4.2060e-09  3.8733e-11  3.9720e-11  1.4941e-10  1.0669e-09  0:00:02  900
+Flow time = 143s, time step = 143
+6 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+!15400 solution is converged
+ 15400  4.2060e-09  3.8733e-11  3.9720e-11  1.4941e-10  1.0669e-09  0:00:02 1000
+!15500 solution is converged
+ 15500  3.9063e-09  3.5973e-11  3.6890e-11  1.3877e-10  9.9086e-10  0:00:12  900
+Flow time = 144s, time step = 144
+5 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+!15500 solution is converged
+ 15500  3.9063e-09  3.5973e-11  3.6890e-11  1.3877e-10  9.9086e-10  0:00:14 1000
+!15600 solution is converged
+ 15600  3.6280e-09  3.3410e-11  3.4261e-11  1.2888e-10  9.2027e-10  0:02:24  900
+Flow time = 145s, time step = 145
+4 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+!15600 solution is converged
+ 15600  3.6280e-09  3.3410e-11  3.4261e-11  1.2888e-10  9.2027e-10  0:02:40 1000
+!15700 solution is converged
+ 15700  3.3695e-09  3.1030e-11  3.1820e-11  1.1970e-10  8.5470e-10  0:00:01  900
+Flow time = 146s, time step = 146
+3 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+!15700 solution is converged
+ 15700  3.3695e-09  3.1030e-11  3.1820e-11  1.1970e-10  8.5470e-10  0:00:01 1000
+!15800 solution is converged
+ 15800  3.1294e-09  2.8819e-11  2.9553e-11  1.1117e-10  7.9380e-10  0:00:05  900
+Flow time = 147s, time step = 147
+2 more time steps
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+!15800 solution is converged
+ 15800  3.1294e-09  2.8819e-11  2.9553e-11  1.1117e-10  7.9380e-10  0:00:06 1000
+!15900 solution is converged
+ 15900  2.9064e-09  2.6766e-11  2.7447e-11  1.0325e-10  7.3725e-10  0:00:38  900
+Flow time = 148s, time step = 148
+1 more time step
+
+Updating solution at time level N...
+ done.
+
+  iter  continuity  x-velocity  y-velocity           k     epsilon     time/iter
+!15900 solution is converged
+ 15900  2.9064e-09  2.6766e-11  2.7447e-11  1.0325e-10  7.3725e-10  0:00:42 1000
+!16000 solution is converged
+ 16000  2.6994e-09  2.4859e-11  2.5492e-11  9.5890e-11  6.8472e-10  0:01:32  900
+Flow time = 149s, time step = 149
+Writing "| gzip -2cf > SolutionMonitor.gz"...
+Writing temporary file C:\\Users\\MonsteR\\AppData\\Local\\Temp\\flntgz-177162 ...
+Done.
+
+Writing data to C:\\Users\\MonsteR\\Desktop\\special topics\\final project\\lid-driven-cavity-2d\\lid-driven-cavity-2d_files\\dp0\\FFF\\Fluent\\FFF.ip ...
+	x-coord
+	y-coord
+	pressure
+	x-velocity
+	y-velocity
+	k
+	epsilon
+Done.
+
+Writing to ME:"C:\Users\MonsteR\Desktop\special topics\final project\lid-driven-cavity-2d\lid-driven-cavity-2d_files\dp0\FFF\Fluent\FFF-5-00149.dat.h5" in NODE0 mode and compression level 1 ...
+  Writing results.
+Done.
+
+Performance Timer for 16000 iterations on 4 compute nodes
+  Average wall-clock time per iteration:              0.012 sec
+  Global reductions per iteration:                       96 ops
+  Global reductions time per iteration:               0.000 sec (0.0%)
+  Message count per iteration:                         2559 messages
+  Data transfer per iteration:                        0.500 MB
+  LE solves per iteration:                                5 solves
+  LE wall-clock time per iteration:                   0.005 sec (42.0%)
+  LE global solves per iteration:                        10 solves
+  LE global wall-clock time per iteration:            0.000 sec (1.1%)
+  LE global matrix maximum size:                        13
+  AMG cycles per iteration:                          15.451 cycles
+  Relaxation sweeps per iteration:                      208 sweeps
+  Relaxation exchanges per iteration:                     0 exchanges
+  LE early protections (stall) per iteration:           0.004 times
+  LE early protections (divergence) per iteration:      0.000 times
+  Total SVARS touched:                              358
+  Time-step updates per iteration:                     0.01 updates
+  Time-step wall-clock time per iteration:            0.000 sec (0.3%)
+
+  Total wall-clock time:                            186.989 sec
+
